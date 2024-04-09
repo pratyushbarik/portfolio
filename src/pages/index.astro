@@ -1,0 +1,41 @@
+---
+import EmailIcon from "../components/EmailIcon.astro";
+import GithubIcon from "../components/GithubIcon.astro";
+import LinkedInIcon from "../components/LinkedInIcon.astro";
+import RoundImg from "../components/RoundImg.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <style></style>
+  </head>
+  <body class="md:px-8 bg-slate-100 dark:bg-slate-800">
+    <main
+      class="flex flex-col items-center mt-28 md:mt-36 lg:mt-48 gap-6 p-2 text-center"
+    >
+      <RoundImg src="photo.jpeg" alt="Avatar" />
+      <h1
+        class="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text"
+      >
+        Hi, I'm Pratyush
+      </h1>
+      <h2
+        class="text-xl font-bold bg-gradient-to-r from-indigo-400 via-green-500 to-blue-600 inline-block text-transparent bg-clip-text"
+      >
+        I make software
+      </h2>
+      <section class="flex gap-6 mt-2">
+        <LinkedInIcon
+          src="https://www.linkedin.com/in/pratyush-barik-79148a129"
+        />
+        <GithubIcon src="https://github.com/pratyushbarik" />
+        <EmailIcon src="mailto:pratyushbarik@gmail.com" />
+      </section>
+    </main>
+  </body>
+</html>

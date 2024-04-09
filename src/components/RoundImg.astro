@@ -1,0 +1,13 @@
+---
+// The frontmatter script space for defining component logic and props
+interface Props {
+  src: string;
+  alt?: string;
+  size?: string; // Accepts Tailwind size classes (e.g., w-32 for width)
+}
+
+const { src, alt = "Round Image", size = "w-32 h-32" } = Astro.props as Props;
+---
+
+<!-- Component structure with Tailwind classes -->
+<img src={src} alt={alt} class={`rounded-full object-cover ${size}`} />
